@@ -5,9 +5,9 @@ public class Kalender {
     private static void printCalendarForMonth(String month) {
         System.out.println(month);
     }
-    private static void printDays(String[] day,int[] daysInMonth, int offsetDays, int daycorrect) {
-        for (int i = 0; i < day.length; i++) {
-            System.out.print(day[i]);
+    private static void printDays(String[] days,int[] daysInMonth, int offsetDays, int daycorrect) {
+        for (String day : days) {
+            System.out.print(day);
         }
         System.out.println("");
         for (int i = 0; i < offsetDays; i++) {
@@ -49,7 +49,6 @@ public class Kalender {
 
         switch (startDay) {
             case "Mo":
-                offsetDays = offsetDays+0;
                 break;
             case "Di":
                 offsetDays = offsetDays+1;
@@ -73,7 +72,6 @@ public class Kalender {
                 System.out.println("Invalid input");
         }
 
-        if (offsetDays <= 6 && offsetDays >= -1) {
             System.out.println("Enter the number of the month you want to display");
             int user_input = sc.nextInt();
             user_input = user_input - 1;
@@ -124,7 +122,6 @@ public class Kalender {
                     break;
                 default:
                     System.out.println("Invalid input");
-            }
         }
     }
 }
