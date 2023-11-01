@@ -51,25 +51,26 @@ public class Kalender {
             case "Mo":
                 break;
             case "Di":
-                offsetDays = offsetDays+1;
+                offsetDays+=1;
                 break;
             case "Mi":
-                offsetDays = offsetDays+2;
+                offsetDays+=2;
                 break;
             case "Do":
-                offsetDays = offsetDays+3;
+                offsetDays+=3;
                 break;
             case "Fr":
-                offsetDays = offsetDays+4;
+                offsetDays+=4;
                 break;
             case "Sa":
-                offsetDays = offsetDays+5;
+                offsetDays+=5;
                 break;
             case "So":
-                offsetDays = offsetDays+6;
+                offsetDays+=6;
                 break;
             default:
                 System.out.println("Invalid input");
+                break;
         }
 
             System.out.println("Enter the number of the month you want to display");
@@ -122,6 +123,7 @@ public class Kalender {
                     break;
                 default:
                     System.out.println("Invalid input");
+                    break;
         }
     }
 }
